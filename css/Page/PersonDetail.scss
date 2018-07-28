@@ -1,0 +1,106 @@
+@import '../settings.scss';
+
+#PersonDetail {
+
+  #personalValkContainer, #personalInfo {
+    height: 100%;
+  }
+
+  #personalValkContainer {
+    position: absolute;
+    padding: 0;
+    .personalValk {
+      height: 100%;
+      background: url(/images/backgrounds/houston/layer3BG.png) no-repeat;
+      background-size: 173% 103%;
+      position: relative; 
+      top: 0px;
+    }
+  }
+
+  #personalInfo {
+    float: right;
+    .personalInfoContent {
+      border-left: 3px solid $darkWhite;
+      height: 33%;
+      float: right;
+      font-size: 1.5em;
+
+      .personalTopContent {
+        margin-bottom: 5%;
+        margin-top: 3%;
+        float: left;
+      }
+
+      .personalPic {
+        height: 100%;
+        float: right;
+        margin: 0;
+        background: url(/images/face.png) no-repeat;
+        background-size: cover !important;
+
+      }
+
+      .personalContact {
+        font-size: 0.7em;
+        height: 40%;
+        float: left;
+        * { padding: 0; }
+        .contacts {
+          height: 100%;
+          text-align: center;
+          color: $darkWhite;
+          .conImg {
+            height: 82%;
+            background-size: 43% 50% !important; /* Default for min-width: 1200px */
+            background-position: center !important;
+          }
+
+          &:hover {
+            background: $darkWhite;
+            cursor: pointer;
+            color: $darkBlack;
+          }
+        }
+
+      }
+
+    }
+
+    .personalInfoMid {
+      .skills {
+        height: 20%;
+        margin: 2% 0%;
+        
+        padding: 0;
+        .skillName {
+          padding: 0;
+        }
+        .skillCon {
+          
+          padding: 0;
+          height: 20%;
+          border-right: 3px solid $darkWhite;
+          .skillLvl {
+            padding: 0;
+            height: 100%;
+            /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#252529+0,d6d6d6+100 */
+            background: #252529; /* Old browsers */
+            background: -moz-linear-gradient(left, #252529 0%, #d6d6d6 100%); /* FF3.6-15 */
+            background: -webkit-linear-gradient(left, #252529 0%,#d6d6d6 100%); /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to right, #252529 0%,#d6d6d6 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252529', endColorstr='#d6d6d6',GradientType=1 ); /* IE6-9 */
+          }
+        }
+
+
+      }
+      .skills:nth-child(even) {
+        float: right;
+      }
+      .skills:nth-child(odd) {
+        float: left;
+      }
+    }
+  }
+}

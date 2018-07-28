@@ -1,0 +1,49 @@
+@import '../settings.scss';
+
+
+#TitleCard {
+  @extend %shadowed !optional;
+  border: 1px none;
+  padding: 0;
+  color: $lightWhite;
+  background: $darkBlack;
+
+  #titleCardBG {
+    background: url(/images/backgrounds/houston/baseBG.jpg) no-repeat;
+    background-position: center !important;
+    background-size: 100% 100% !important;
+
+  }
+
+  #titleCardContent {
+    padding: 0;
+    .titleCardLogo {
+      
+      font-size: 12em;
+      margin: 0 !important;
+    }
+    .titleCardName {
+      float: right;
+      
+      text-align: right;
+      .titleName {
+        font-size: 3em;
+      }
+      .titlePosition {
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  #TitleCard {
+    height: 93vh;
+    
+    #titleCardBG {
+      height: 80%;
+    }
+
+  }
+}

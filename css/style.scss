@@ -1,8 +1,26 @@
 @import 'settings.scss';
-
+@import './Page/Index.scss';
 
 body {
-	background: white;
+	background: $darkBlack;
+  padding: 2%;
+	font-family: Blockletter;
 
-	
+
+}
+
+
+.bodyContainerItem {
+  margin-bottom: 5%;
+  background: $darkBlack;
+  color: $lightWhite;
+  @extend %shadowed !optional;
+}
+
+
+@media (min-width: 1200px) {
+  .bodyContainerItem {
+    height: 93vh;
+    overflow: hidden;
+  }
 }

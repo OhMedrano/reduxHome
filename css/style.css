@@ -1,3 +1,7 @@
+#TitleCard {
+  border: 1px solid white;
+  height: 90vh; }
+
 body {
-  background: green;
-  font-size: 40px; }
+  background: #252529;
+  padding: 2%; }
