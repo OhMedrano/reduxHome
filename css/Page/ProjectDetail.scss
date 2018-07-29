@@ -1,0 +1,29 @@
+@import '../settings.scss';
+
+#ProjectsCon {
+
+  .projectConItem {
+    height: 100%;
+    border: 1px solid white;
+  }
+
+  .projectLeft {
+    #projectImgView {
+      height: 50%;
+      background-size: cover !important;
+    }
+
+    #projectImgSelection {
+      height: 50%;
+      padding-top: 2%;
+      .projectSelect {
+        height: 50%;
+        .projectContainImg {
+          height: 80%;
+          background-size: cover !important;
+        }
+      }
+    }
+  }
+
+}

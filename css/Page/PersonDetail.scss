@@ -102,5 +102,27 @@
         float: left;
       }
     }
+    #personalInfoBtm {
+      padding-top: 4%;
+      .workExp {
+
+        > div, > ul {
+          padding: 0;
+        }
+
+        .workPos, .workDate {
+          font-size: 14px;
+        }
+        .workCon {
+          .duty{
+            font-size: 12px;
+            padding: 0;
+          }
+        }
+
+
+      }
+
+    }
   }
 }
