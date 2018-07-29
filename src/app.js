@@ -3,6 +3,7 @@ import Data from './Data/Data.js';
 import MakeElement from './Tools/MakeElement.js';
 import TitleCard from './Page/TitleCard.js';
 import PersonDetail from './Page/PersonDetail.js';
+import Projects from './Page/ProjectDetail.js';
 
 
 
@@ -15,7 +16,7 @@ function RenderSite(){
 
 	let bodyContainer = makeEle.createEle('div','bodyContainer',[12,12,12,12],'bodyContain');  
 
-  bodyContainer.append(TitleCard(Data),PersonDetail(Data));
+  bodyContainer.append(TitleCard(Data),PersonDetail(Data),Projects(Data));
   
   body.append(bodyContainer);
 }

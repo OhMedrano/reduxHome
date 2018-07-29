@@ -53,7 +53,30 @@ function PersonDetail(data) {
 
 
   work.forEach(function(workExp, i) {
-    console.log(workExp);
+    let workContain = makeEle.createEle('div','workExp'+i,[12,12,4,4],'workExp');
+    let workName = makeEle.createEle('div','workName'+i,[12,12,12,12],'workName');
+    let workPosition = makeEle.createEle('div','workPos'+i,[12,12,12,12],'workPos');
+    let workDate = makeEle.createEle('div','workDate'+i,[12,12,12,12],'workDate');
+    let workDutyCon = makeEle.createEle('ul','workDutyCon'+i,[12,12,12,12],'workCon');
+
+    workName.innerHTML = `<div>${workExp.name}</div>`;
+    workPosition.innerHTML = `<div>${workExp.position}</div>`;
+
+    if(workExp.isPresent) {
+      workDate.innerHTML = `<div> ${workExp.startDate} - Present </div>`;
+    } else {
+      workDate.innerHTML = `<div> ${workExp.startDate} - ${workExp.endDate}`;
+    }
+
+    workExp.duties.forEach(function(duty, x){
+      let dut = makeEle.createEle('li','duty'+i,[12,12,12,12],'duty');
+      dut.innerHTML = duty;
+
+      workDutyCon.append(dut);
+    })
+
+    workContain.append(workName,workPosition,workDate,workDutyCon);
+    personalContentBtm.append(workContain);
   });
 
   personalContentTop.append(personalContentText,personalContentPic,personalContactContain);
