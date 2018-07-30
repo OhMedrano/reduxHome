@@ -4,7 +4,7 @@
 
   .projectConItem {
     height: 100%;
-    border: 1px solid white;
+
   }
 
   .projectLeft {
@@ -37,42 +37,47 @@
   }
 
   .projectRight {
-    .projectActualDetail {
-      background: $darkBlack;
-      border-left: 5px solid $darkWhite;
-      padding: 3% 0;
-      .projectName {
-        font-size: 40px;
+    #projectDetailContain {
+      margin-top: 5%;
+      .projectActualDetail {
+        background: $darkBlack;
+        border-left: 5px solid $darkWhite;
+        padding: 3% 0;
+        @extend %shadowed;
+        .projectName {
+          font-size: 40px;
 
-      }
-      .projectFramework {
-        background: $darkWhite;
-        color: $darkBlack;
-        font-size: 20px;
-      }
-      .projLink {
-        transition: all 0.3s ease;
-        text-decoration: none !important;
-        font-size: 20px;
-        .projectLink {
-          padding: 0 3px;
-          color: $darkWhite !important;
         }
-        &:hover {
+        .projectFramework {
           background: $darkWhite;
+          color: $darkBlack;
+          font-size: 20px;
+        }
+        .projLink {
+          transition: all 0.3s ease;
+          text-decoration: none !important;
+          font-size: 20px;
           .projectLink {
-            color: $darkBlack !important;
+            padding: 0 3px;
+            color: $darkWhite !important;
+          }
+          &:hover {
+            background: $darkWhite;
+            .projectLink {
+              color: $darkBlack !important;
 
+            }
           }
         }
-      }
-      ul {
-        list-style: none;
+        ul {
+          list-style: none;
 
-        li {
-          height: 3vh;
-          display: flex;
-          align-items: center;
+          li {
+            padding: 1% 0;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+          }
         }
       }
     }

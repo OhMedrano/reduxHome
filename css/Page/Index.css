@@ -1,4 +1,4 @@
-#TitleCard {
+#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -12,30 +12,36 @@
   padding: 0;
   color: #D6D6D6;
   background: #252529; }
-  #TitleCard #titleCardBG {
-    background: url(/images/backgrounds/houston/baseBG.jpg) no-repeat;
-    background-position: center !important;
-    background-size: 100% 100% !important; }
-  #TitleCard #titleCardContent {
-    padding: 0; }
-    #TitleCard #titleCardContent .titleCardLogo {
-      font-size: 12em;
-      margin: 0 !important; }
-    #TitleCard #titleCardContent .titleCardName {
-      float: right;
-      text-align: right; }
-      #TitleCard #titleCardContent .titleCardName .titleName {
-        font-size: 3em; }
-      #TitleCard #titleCardContent .titleCardName .titlePosition {
-        font-size: 2em; }
+
+#TitleCard #titleCardBG {
+  background: url(/images/backgrounds/houston/baseBG.jpg) no-repeat;
+  background-position: center !important;
+  background-size: 100% 100% !important; }
+
+#TitleCard #titleCardContent {
+  padding: 0; }
+
+#TitleCard #titleCardContent .titleCardLogo {
+  font-size: 12em;
+  margin: 0 !important; }
+
+#TitleCard #titleCardContent .titleCardName {
+  float: right;
+  text-align: right; }
+
+#TitleCard #titleCardContent .titleCardName .titleName {
+  font-size: 3em; }
+
+#TitleCard #titleCardContent .titleCardName .titlePosition {
+  font-size: 2em; }
 
 @media (min-width: 1200px) {
   #TitleCard {
     height: 93vh; }
-    #TitleCard #titleCardBG {
-      height: 80%; } }
+  #TitleCard #titleCardBG {
+    height: 80%; } }
 
-#TitleCard {
+#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -50,88 +56,107 @@
 #PersonDetail #personalValkContainer {
   position: absolute;
   padding: 0; }
-  #PersonDetail #personalValkContainer .personalValk {
-    height: 100%;
-    background: url(/images/backgrounds/houston/layer3BG.png) no-repeat;
-    background-size: 173% 103%;
-    position: relative;
-    top: 0px; }
+
+#PersonDetail #personalValkContainer .personalValk {
+  height: 100%;
+  background: url(/images/backgrounds/houston/layer3BG.png) no-repeat;
+  background-size: 173% 103%;
+  position: relative;
+  top: 0px; }
 
 #PersonDetail #personalInfo {
   float: right; }
-  #PersonDetail #personalInfo .personalInfoContent {
-    border-left: 3px solid #81818A;
-    height: 33%;
-    float: right;
-    font-size: 1.5em; }
-    #PersonDetail #personalInfo .personalInfoContent .personalTopContent {
-      margin-bottom: 5%;
-      margin-top: 3%;
-      float: left; }
-    #PersonDetail #personalInfo .personalInfoContent .personalPic {
-      height: 100%;
-      float: right;
-      margin: 0;
-      background: url(/images/face.png) no-repeat;
-      background-size: cover !important; }
-    #PersonDetail #personalInfo .personalInfoContent .personalContact {
-      font-size: 0.7em;
-      height: 40%;
-      float: left; }
-      #PersonDetail #personalInfo .personalInfoContent .personalContact * {
-        padding: 0; }
-      #PersonDetail #personalInfo .personalInfoContent .personalContact .contacts {
-        height: 100%;
-        text-align: center;
-        color: #81818A; }
-        #PersonDetail #personalInfo .personalInfoContent .personalContact .contacts .conImg {
-          height: 82%;
-          background-size: 43% 50% !important;
-          /* Default for min-width: 1200px */
-          background-position: center !important; }
-        #PersonDetail #personalInfo .personalInfoContent .personalContact .contacts:hover {
-          background: #81818A;
-          cursor: pointer;
-          color: #252529; }
-  #PersonDetail #personalInfo .personalInfoMid .skills {
-    height: 20%;
-    margin: 2% 0%;
-    padding: 0; }
-    #PersonDetail #personalInfo .personalInfoMid .skills .skillName {
-      padding: 0; }
-    #PersonDetail #personalInfo .personalInfoMid .skills .skillCon {
-      padding: 0;
-      height: 20%;
-      border-right: 3px solid #81818A; }
-      #PersonDetail #personalInfo .personalInfoMid .skills .skillCon .skillLvl {
-        padding: 0;
-        height: 100%;
-        /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#252529+0,d6d6d6+100 */
-        background: #252529;
-        /* Old browsers */
-        background: -moz-linear-gradient(left, #252529 0%, #d6d6d6 100%);
-        /* FF3.6-15 */
-        background: -webkit-linear-gradient(left, #252529 0%, #d6d6d6 100%);
-        /* Chrome10-25,Safari5.1-6 */
-        background: linear-gradient(to right, #252529 0%, #d6d6d6 100%);
-        /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252529', endColorstr='#d6d6d6',GradientType=1 );
-        /* IE6-9 */ }
-  #PersonDetail #personalInfo .personalInfoMid .skills:nth-child(even) {
-    float: right; }
-  #PersonDetail #personalInfo .personalInfoMid .skills:nth-child(odd) {
-    float: left; }
-  #PersonDetail #personalInfo #personalInfoBtm {
-    padding-top: 4%; }
-    #PersonDetail #personalInfo #personalInfoBtm .workExp > div, #PersonDetail #personalInfo #personalInfoBtm .workExp > ul {
-      padding: 0; }
-    #PersonDetail #personalInfo #personalInfoBtm .workExp .workPos, #PersonDetail #personalInfo #personalInfoBtm .workExp .workDate {
-      font-size: 14px; }
-    #PersonDetail #personalInfo #personalInfoBtm .workExp .workCon .duty {
-      font-size: 12px;
-      padding: 0; }
 
-#TitleCard {
+#PersonDetail #personalInfo .personalInfoContent {
+  border-left: 3px solid #81818A;
+  height: 33%;
+  float: right;
+  font-size: 1.5em; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalTopContent {
+  margin-bottom: 5%;
+  margin-top: 3%;
+  float: left; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalPic {
+  height: 100%;
+  float: right;
+  margin: 0;
+  background: url(/images/face.png) no-repeat;
+  background-size: cover !important; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalContact {
+  font-size: 0.7em;
+  height: 40%;
+  float: left; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalContact * {
+  padding: 0; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalContact .contacts {
+  height: 100%;
+  text-align: center;
+  color: #81818A; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalContact .contacts .conImg {
+  height: 82%;
+  background-size: 43% 50% !important;
+  /* Default for min-width: 1200px */
+  background-position: center !important; }
+
+#PersonDetail #personalInfo .personalInfoContent .personalContact .contacts:hover {
+  background: #81818A;
+  cursor: pointer;
+  color: #252529; }
+
+#PersonDetail #personalInfo .personalInfoMid .skills {
+  height: 20%;
+  margin: 2% 0%;
+  padding: 0; }
+
+#PersonDetail #personalInfo .personalInfoMid .skills .skillName {
+  padding: 0; }
+
+#PersonDetail #personalInfo .personalInfoMid .skills .skillCon {
+  padding: 0;
+  height: 20%;
+  border-right: 3px solid #81818A; }
+
+#PersonDetail #personalInfo .personalInfoMid .skills .skillCon .skillLvl {
+  padding: 0;
+  height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#252529+0,d6d6d6+100 */
+  background: #252529;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #252529 0%, #d6d6d6 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #252529 0%, #d6d6d6 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #252529 0%, #d6d6d6 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#252529', endColorstr='#d6d6d6',GradientType=1 );
+  /* IE6-9 */ }
+
+#PersonDetail #personalInfo .personalInfoMid .skills:nth-child(even) {
+  float: right; }
+
+#PersonDetail #personalInfo .personalInfoMid .skills:nth-child(odd) {
+  float: left; }
+
+#PersonDetail #personalInfo #personalInfoBtm {
+  padding-top: 4%; }
+
+#PersonDetail #personalInfo #personalInfoBtm .workExp > div, #PersonDetail #personalInfo #personalInfoBtm .workExp > ul {
+  padding: 0; }
+
+#PersonDetail #personalInfo #personalInfoBtm .workExp .workPos, #PersonDetail #personalInfo #personalInfoBtm .workExp .workDate {
+  font-size: 14px; }
+
+#PersonDetail #personalInfo #personalInfoBtm .workExp .workCon .duty {
+  font-size: 12px;
+  padding: 0; }
+
+#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -139,3 +164,70 @@
 @font-face {
   font-family: Blockletter;
   src: url("/css/Fonts/Blockletter.otf"); }
+
+#ProjectsCon .projectConItem {
+  height: 100%; }
+
+#ProjectsCon .projectLeft #projectImgView {
+  height: 50%;
+  background-size: cover !important; }
+
+#ProjectsCon .projectLeft #projectImgSelection {
+  height: 50%;
+  padding-top: 2%; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect {
+  height: 50%;
+  transition: all 0.5s ease; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect .projectContainImg {
+  height: 100%;
+  background-size: 80% 80% !important;
+  background-position: center !important; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover {
+  background: #81818A;
+  cursor: pointer; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover .projectContainImg {
+  background-size: 90% 90% !important; }
+
+#ProjectsCon .projectRight #projectDetailContain {
+  margin-top: 5%; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
+  background: #252529;
+  border-left: 5px solid #81818A;
+  padding: 3% 0; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projectName {
+  font-size: 40px; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projectFramework {
+  background: #81818A;
+  color: #252529;
+  font-size: 20px; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink {
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  font-size: 20px; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink .projectLink {
+  padding: 0 3px;
+  color: #81818A !important; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink:hover {
+  background: #81818A; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink:hover .projectLink {
+  color: #252529 !important; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail ul {
+  list-style: none; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail ul li {
+  padding: 1% 0;
+  display: flex;
+  align-items: center;
+  font-size: 17px; }
