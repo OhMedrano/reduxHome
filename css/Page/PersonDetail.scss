@@ -126,3 +126,50 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  #PersonDetail {
+    .personalInfoTop {
+      
+
+      .personalInnerText {
+        font-size: 14px !important;
+      }
+      .personalContact {
+        height: 30% !important;
+      }
+    }
+    .skillName {
+      font-size: 11px;
+    }
+  }
+
+}
+
+@media (min-width: 500px) and (max-width: 990px) {
+  #PersonDetail {
+    #personalInfo {
+      .personalInfoContent {
+        height: 25%;
+        border: 1px none !important;
+        .personalTopContent {
+          margin-bottom: 0%;
+          .personalInnerText {
+            font-size: 16px;
+          }
+        }
+        .personalPic {
+          background-size: 60% 80% !important;
+          background-position: center !important;
+        } 
+      }
+
+      .personalInfoBtm {
+        .workExp {
+          min-height: 182px;
+        }
+      }
+
+    }   
+  }
+}

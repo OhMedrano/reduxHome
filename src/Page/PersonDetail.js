@@ -19,14 +19,14 @@ function PersonDetail(data) {
   let personalContentTop = makeEle.createEle('div','personalInfoTop',[12,12,12,12],['personalInfoContent','personalInfoTop']);
   let personalContentMid = makeEle.createEle('div','personalInfoMid',[12,12,10,10],['personalInfoContent','personalInfoMid']);
   let personalContentBtm = makeEle.createEle('div','personalInfoBtm',[12,12,12,12],['personalInfoContent','personalInfoBtm']);
-  let personalContentText = makeEle.createEle('div','personalTopText',[8,8,8,8],['personalTopContent','personalTopText']);
-  let personalContactContain = makeEle.createEle('div','personalContact',[8,8,8,8],['personalTopContent','personalContact']);
-  let personalContentPic = makeEle.createEle('div','personalContentPic',[4,4,4,4],['personalTopContent','personalPic']);
+  let personalContentText = makeEle.createEle('div','personalTopText',[12,12,8,8],['personalTopContent','personalTopText']);
+  let personalContactContain = makeEle.createEle('div','personalContact',[12,12,8,8],['personalTopContent','personalContact']);
+  let personalContentPic = makeEle.createEle('div','personalContentPic',[0,0,4,4],['personalTopContent','personalPic']);
 
   person.contact.forEach(function(contac,i){
-    let contat = makeEle.createEle('a','contact'+i,[3,3,3,3],'contacts');
+    let contat = makeEle.createEle('a','contact'+i,[6,6,3,3],'contacts');
     let conImg = makeEle.createEle('div','conImg'+i,[12,12,12,12],'conImg');
-    let conTitle = makeEle.createEle('div','conTitle'+i,[12,12,12,12],'conTitle');
+    let conTitle = makeEle.createEle('div','conTitle'+i,[0,0,12,12],'conTitle');
     contat.href = contac.link;
     conTitle.innerHTML = contac.handle;
     conImg.style.cssText = `background:url(${contac.icon}) no-repeat;`;
@@ -39,7 +39,7 @@ function PersonDetail(data) {
 
 
   person.skillSet.forEach(function(skil,i){
-    let skill = makeEle.createEle('div','skill'+i,[6,6,5,5],'skills');
+    let skill = makeEle.createEle('div','skill'+i,[5,5,5,5],'skills');
     let skillName = makeEle.createEle('div','skillName'+i,[12,12,12,12],'skillName');
     let skillLvlContain = makeEle.createEle('div','skillCon'+i,[12,12,12,12],'skillCon');
     let skillLvl = makeEle.createEle('div','skillLvl'+i,null,'skillLvl');
@@ -53,7 +53,7 @@ function PersonDetail(data) {
 
 
   work.forEach(function(workExp, i) {
-    let workContain = makeEle.createEle('div','workExp'+i,[12,12,4,4],'workExp');
+    let workContain = makeEle.createEle('div','workExp'+i,[12,6,4,4],'workExp');
     let workName = makeEle.createEle('div','workName'+i,[12,12,12,12],'workName');
     let workPosition = makeEle.createEle('div','workPos'+i,[12,12,12,12],'workPos');
     let workDate = makeEle.createEle('div','workDate'+i,[12,12,12,12],'workDate');

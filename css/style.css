@@ -1,4 +1,4 @@
-#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -7,7 +7,7 @@
   font-family: Blockletter;
   src: url("/css/Fonts/Blockletter.otf"); }
 
-#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -44,13 +44,25 @@
 #TitleCard #titleCardContent .titleCardName .titlePosition {
   font-size: 2em; }
 
+@media (max-width: 990px) {
+  #TitleCard #titleCardBG {
+    height: 70%; }
+  #TitleCard .titleCardLogo {
+    font-size: 8em !important; } }
+
+@media (max-width: 500px) {
+  #TitleCard #titleCardBG {
+    height: 70%; }
+  #TitleCard .titleCardLogo {
+    font-size: 4em !important; }
+  #TitleCard .titleCardName {
+    font-size: 10px !important; } }
+
 @media (min-width: 1200px) {
-  #TitleCard {
-    height: 93vh; }
   #TitleCard #titleCardBG {
     height: 80%; } }
 
-#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -165,7 +177,29 @@
   font-size: 12px;
   padding: 0; }
 
-#TitleCard, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
+@media (max-width: 500px) {
+  #PersonDetail .personalInfoTop .personalInnerText {
+    font-size: 14px !important; }
+  #PersonDetail .personalInfoTop .personalContact {
+    height: 30% !important; }
+  #PersonDetail .skillName {
+    font-size: 11px; } }
+
+@media (min-width: 500px) and (max-width: 990px) {
+  #PersonDetail #personalInfo .personalInfoContent {
+    height: 25%;
+    border: 1px none !important; }
+  #PersonDetail #personalInfo .personalInfoContent .personalTopContent {
+    margin-bottom: 0%; }
+  #PersonDetail #personalInfo .personalInfoContent .personalTopContent .personalInnerText {
+    font-size: 16px; }
+  #PersonDetail #personalInfo .personalInfoContent .personalPic {
+    background-size: 60% 80% !important;
+    background-position: center !important; }
+  #PersonDetail #personalInfo .personalInfoBtm .workExp {
+    min-height: 182px; } }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail, .bodyContainerItem {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -202,7 +236,9 @@
   background-size: 90% 90% !important; }
 
 #ProjectsCon .projectRight #projectDetailContain {
-  margin-top: 5%; }
+  margin-top: 5%;
+  position: relative;
+  z-index: 10; }
 
 #ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
   background: #252529;
@@ -241,6 +277,23 @@
   align-items: center;
   font-size: 17px; }
 
+#ProjectsCon .projectRight .ironMan {
+  background: url(/images/backgrounds/ironman/newIronman.png) no-repeat;
+  background-size: 100% 100% !important;
+  height: 60%;
+  position: relative;
+  z-index: 5; }
+
+@media (min-width: 500px) and (max-width: 990px) {
+  #ProjectsCon .projectConItem {
+    height: 50%; }
+  #ProjectsCon .projectConItem #projectImgView {
+    height: 79%; } }
+
+@media (max-width: 500px) {
+  #ProjectsCon {
+    border: 5px solid white; } }
+
 body {
   background: #252529;
   padding: 2%;
@@ -249,9 +302,19 @@ body {
 .bodyContainerItem {
   margin-bottom: 5%;
   background: #252529;
-  color: #D6D6D6; }
+  color: #D6D6D6;
+  overflow: hidden; }
 
 @media (min-width: 1200px) {
   .bodyContainerItem {
-    height: 93vh;
-    overflow: hidden; } }
+    height: 93vh; } }
+
+@media (min-width: 500px) and (max-width: 990px) {
+  .bodyContainerItem {
+    height: 80vh; } }
+
+@media (max-width: 500px) {
+  .bodyContainerItem {
+    height: 95vh; }
+  #PersonDetail {
+    height: 120vh; } }

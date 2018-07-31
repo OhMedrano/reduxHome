@@ -14,6 +14,7 @@ body {
   margin-bottom: 5%;
   background: $darkBlack;
   color: $lightWhite;
+  overflow: hidden;
   @extend %shadowed !optional;
 }
 
@@ -21,6 +22,21 @@ body {
 @media (min-width: 1200px) {
   .bodyContainerItem {
     height: 93vh;
-    overflow: hidden;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 990px) {
+  .bodyContainerItem {
+    height: 80vh;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .bodyContainerItem {
+    height: 95vh;
+  }
+  #PersonDetail {
+    height: 120vh;
   }
 }

@@ -2,7 +2,7 @@
 
 
 #TitleCard {
-  @extend %shadowed !optional;
+
   border: 1px none;
   padding: 0;
   color: $lightWhite;
@@ -37,13 +37,38 @@
 }
 
 
+
+
+
+@media (max-width: 990px) {
+  #TitleCard {
+    #titleCardBG {
+      height: 70%;
+    }
+    .titleCardLogo {
+      font-size: 8em !important;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #TitleCard {
+    #titleCardBG {
+      height: 70%;
+    }
+
+    .titleCardLogo {
+      font-size: 4em !important;
+    }
+    .titleCardName {
+      font-size: 10px !important;
+    }
+  }
+}
 @media (min-width: 1200px) {
   #TitleCard {
-    height: 93vh;
-    
     #titleCardBG {
       height: 80%;
     }
-
   }
 }

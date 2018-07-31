@@ -1,0 +1,43 @@
+@font-face {
+  font-family: Blockletter;
+  src: url("/css/Fonts/Blockletter.otf"); }
+
+#TitleCard {
+  border: 1px none;
+  padding: 0;
+  color: #D6D6D6;
+  background: #252529; }
+  #TitleCard #titleCardBG {
+    background: url(/images/backgrounds/houston/baseBG.jpg) no-repeat;
+    background-position: center !important;
+    background-size: 100% 100% !important; }
+  #TitleCard #titleCardContent {
+    padding: 0; }
+    #TitleCard #titleCardContent .titleCardLogo {
+      font-size: 12em;
+      margin: 0 !important; }
+    #TitleCard #titleCardContent .titleCardName {
+      float: right;
+      text-align: right; }
+      #TitleCard #titleCardContent .titleCardName .titleName {
+        font-size: 3em; }
+      #TitleCard #titleCardContent .titleCardName .titlePosition {
+        font-size: 2em; }
+
+@media (max-width: 990px) {
+  #TitleCard #titleCardBG {
+    height: 70%; }
+  #TitleCard .titleCardLogo {
+    font-size: 8em !important; } }
+
+@media (max-width: 500px) {
+  #TitleCard #titleCardBG {
+    height: 70%; }
+  #TitleCard .titleCardLogo {
+    font-size: 4em !important; }
+  #TitleCard .titleCardName {
+    font-size: 10px !important; } }
+
+@media (min-width: 1200px) {
+  #TitleCard #titleCardBG {
+    height: 80%; } }

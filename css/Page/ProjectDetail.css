@@ -1,4 +1,4 @@
-#ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover, #ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
   -webkit-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   -moz-box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29);
   box-shadow: 30px 38px 69px 0px rgba(0, 0, 0, 0.29); }
@@ -17,46 +17,78 @@
 #ProjectsCon .projectLeft #projectImgSelection {
   height: 50%;
   padding-top: 2%; }
-  #ProjectsCon .projectLeft #projectImgSelection .projectSelect {
-    height: 50%;
-    transition: all 0.5s ease; }
-    #ProjectsCon .projectLeft #projectImgSelection .projectSelect .projectContainImg {
-      height: 100%;
-      background-size: 80% 80% !important;
-      background-position: center !important; }
-    #ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover {
-      background: #81818A;
-      cursor: pointer; }
-      #ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover .projectContainImg {
-        background-size: 90% 90% !important; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect {
+  height: 50%;
+  transition: all 0.5s ease; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect .projectContainImg {
+  height: 100%;
+  background-size: 80% 80% !important;
+  background-position: center !important; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover {
+  background: #81818A;
+  cursor: pointer; }
+
+#ProjectsCon .projectLeft #projectImgSelection .projectSelect:hover .projectContainImg {
+  background-size: 90% 90% !important; }
 
 #ProjectsCon .projectRight #projectDetailContain {
-  margin-top: 5%; }
-  #ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
-    background: #252529;
-    border-left: 5px solid #81818A;
-    padding: 3% 0; }
-    #ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projectName {
-      font-size: 40px; }
-    #ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projectFramework {
-      background: #81818A;
-      color: #252529;
-      font-size: 20px; }
-    #ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink {
-      transition: all 0.3s ease;
-      text-decoration: none !important;
-      font-size: 20px; }
-      #ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink .projectLink {
-        padding: 0 3px;
-        color: #81818A !important; }
-      #ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink:hover {
-        background: #81818A; }
-        #ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink:hover .projectLink {
-          color: #252529 !important; }
-    #ProjectsCon .projectRight #projectDetailContain .projectActualDetail ul {
-      list-style: none; }
-      #ProjectsCon .projectRight #projectDetailContain .projectActualDetail ul li {
-        padding: 1% 0;
-        display: flex;
-        align-items: center;
-        font-size: 17px; }
+  margin-top: 5%;
+  position: relative;
+  z-index: 10; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail {
+  background: #252529;
+  border-left: 5px solid #81818A;
+  padding: 3% 0; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projectName {
+  font-size: 40px; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projectFramework {
+  background: #81818A;
+  color: #252529;
+  font-size: 20px; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink {
+  transition: all 0.3s ease;
+  text-decoration: none !important;
+  font-size: 20px; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink .projectLink {
+  padding: 0 3px;
+  color: #81818A !important; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink:hover {
+  background: #81818A; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail .projLink:hover .projectLink {
+  color: #252529 !important; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail ul {
+  list-style: none; }
+
+#ProjectsCon .projectRight #projectDetailContain .projectActualDetail ul li {
+  padding: 1% 0;
+  display: flex;
+  align-items: center;
+  font-size: 17px; }
+
+#ProjectsCon .projectRight .ironMan {
+  background: url(/images/backgrounds/ironman/newIronman.png) no-repeat;
+  background-size: 100% 100% !important;
+  height: 60%;
+  position: relative;
+  z-index: 5; }
+
+@media (min-width: 500px) and (max-width: 990px) {
+  #ProjectsCon .projectConItem {
+    height: 50%; }
+  #ProjectsCon .projectConItem #projectImgView {
+    height: 79%; } }
+
+@media (max-width: 500px) {
+  #ProjectsCon {
+    border: 5px solid white; } }

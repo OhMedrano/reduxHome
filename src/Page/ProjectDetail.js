@@ -29,7 +29,7 @@ function ProjectsDetail(currentProject) {
 function Projects(data) {
   
   let projectData = data.projects;
-
+  let knownPosition = 0;
 
   let ProjectsCon = makeEle.createEle('div','ProjectsCon',[12,12,12,12],['bodyContainerItem','projectsContain']);
   let projectLeftSide = makeEle.createEle('div','projectLeft',[12,12,7,7],['projectConItem','projectLeft']);
@@ -37,14 +37,14 @@ function Projects(data) {
   let projectViewer = makeEle.createEle('div','projectImgView',[12,12,12,12],['projectLeftItem','projectImgViewer']);
   let projectSelection = makeEle.createEle('div','projectImgSelection',[12,12,12,12],['projectLeftItem','projectImgSelection']);
   let projectDetailContain = makeEle.createEle('div','projectDetailContain',[12,12,10,10],['projectRightItem','projectDetailCon']);
-  let projectIronMan = makeEle.createEle('div','ironMan',[12,12,12,12],'ironMan');
+  let projectIronMan = makeEle.createEle('div','ironMan',[0,0,12,12],'ironMan');
 
   projectDetailContain.append(ProjectsDetail(projectData[selectedproject]));
 
 
   projectViewer.style.cssText = 'background:url('+projectData[selectedproject].projectImage+') no-repeat;';
   projectData.forEach(function(project,i) {
-    let projectContain = makeEle.createEle('div','projectContain'+i,[12,12,6,6],'projectSelect');
+    let projectContain = makeEle.createEle('div','projectContain'+i,[2,3,6,6],'projectSelect');
     let projectContainImg = makeEle.createEle('div','projectContainImg'+i,[12,12,12,12],'projectContainImg');
 
     projectContainImg.style.cssText = `background: url(${project.projectImage})no-repeat;`;
@@ -61,6 +61,19 @@ function Projects(data) {
   });
 
 
+  window.addEventListener('scroll',function(event){
+        let parallaxFactor = 4/* controls speed */
+    let scr = window.scrollY || document.documentElement.scrollTop;
+    let movedPosition = (scr / parallaxFactor) + -550; 
+    let moveValk = document.querySelector('.ironMan');
+    if(scr > 1200) {
+      moveValk.style.top = movedPosition + 'px';      
+    } else {
+      console.log(scr);
+    }
+
+    knownPosition = scr; /* incase need for up/down conditions */
+  })
 
 
   
