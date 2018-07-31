@@ -5,6 +5,9 @@ class animateSkill {
 }
 */
 
+
+
+
 function PersonDetail(data) {
   let makeEle = new MakeElement;
   let person = data.person;
@@ -39,7 +42,7 @@ function PersonDetail(data) {
 
 
   person.skillSet.forEach(function(skil,i){
-    let skill = makeEle.createEle('div','skill'+i,[5,5,5,5],'skills');
+    let skill = makeEle.createEle('div','skill'+i,[12,5,5,5],'skills');
     let skillName = makeEle.createEle('div','skillName'+i,[12,12,12,12],'skillName');
     let skillLvlContain = makeEle.createEle('div','skillCon'+i,[12,12,12,12],'skillCon');
     let skillLvl = makeEle.createEle('div','skillLvl'+i,null,'skillLvl');
@@ -52,32 +55,51 @@ function PersonDetail(data) {
   });
 
 
-  work.forEach(function(workExp, i) {
-    let workContain = makeEle.createEle('div','workExp'+i,[12,6,4,4],'workExp');
-    let workName = makeEle.createEle('div','workName'+i,[12,12,12,12],'workName');
-    let workPosition = makeEle.createEle('div','workPos'+i,[12,12,12,12],'workPos');
-    let workDate = makeEle.createEle('div','workDate'+i,[12,12,12,12],'workDate');
-    let workDutyCon = makeEle.createEle('ul','workDutyCon'+i,[12,12,12,12],'workCon');
+  if(window.innerWidth > 500) {
+    console.log('this is not a mobile display');
 
-    workName.innerHTML = `<div>${workExp.name}</div>`;
-    workPosition.innerHTML = `<div>${workExp.position}</div>`;
+    work.forEach(function(workExp, i) {
+      let workContain = makeEle.createEle('div','workExp'+i,[12,6,4,4],'workExp');
+      let workName = makeEle.createEle('div','workName'+i,[12,12,12,12],'workName');
+      let workPosition = makeEle.createEle('div','workPos'+i,[12,12,12,12],'workPos');
+      let workDate = makeEle.createEle('div','workDate'+i,[12,12,12,12],'workDate');
+      let workDutyCon = makeEle.createEle('ul','workDutyCon'+i,[12,12,12,12],'workCon');
 
-    if(workExp.isPresent) {
-      workDate.innerHTML = `<div> ${workExp.startDate} - Present </div>`;
-    } else {
-      workDate.innerHTML = `<div> ${workExp.startDate} - ${workExp.endDate}`;
-    }
+      workName.innerHTML = `<div>${workExp.name}</div>`;
+      workPosition.innerHTML = `<div>${workExp.position}</div>`;
 
-    workExp.duties.forEach(function(duty, x){
-      let dut = makeEle.createEle('li','duty'+i,[12,12,12,12],'duty');
-      dut.innerHTML = duty;
+      if(workExp.isPresent) {
+        workDate.innerHTML = `<div> ${workExp.startDate} - Present </div>`;
+      } else {
+        workDate.innerHTML = `<div> ${workExp.startDate} - ${workExp.endDate}`;
+      }
 
-      workDutyCon.append(dut);
+      workExp.duties.forEach(function(duty, x){
+        let dut = makeEle.createEle('li','duty'+i,[12,12,12,12],'duty');
+        dut.innerHTML = duty;
+
+        workDutyCon.append(dut);
+      })
+
+      workContain.append(workName,workPosition,workDate,workDutyCon);
+      personalContentBtm.append(workContain);
+    });
+
+  } else {
+    let workSelect = makeEle.createEle('div','workSelectContainer',[12,12,0,0],'workSelectContainer');
+
+    work.forEach(function(workEx,i){
+      let workName = makeEle.createEle('div','workSelectName'+i,[12,12,12,12],'workSelectName');
+      workName.innerHTML = workEx.name;
+      workSelect.append(workName);
     })
 
-    workContain.append(workName,workPosition,workDate,workDutyCon);
-    personalContentBtm.append(workContain);
-  });
+
+    personalContentBtm.append(workSelect);
+
+  }
+  
+
 
   personalContentTop.append(personalContentText,personalContentPic,personalContactContain);
   personalValkContainer.append(personalValk);

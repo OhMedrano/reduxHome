@@ -169,12 +169,23 @@
   padding: 0; }
 
 @media (max-width: 500px) {
+  #PersonDetail #personalInfo {
+    padding: 0; }
+  #PersonDetail #personalInfo .personalInfoContent {
+    border: 1px none !important;
+    padding: 0 !important; }
+  #PersonDetail .personalInfoTop {
+    height: 30% !important; }
   #PersonDetail .personalInfoTop .personalInnerText {
     font-size: 14px !important; }
   #PersonDetail .personalInfoTop .personalContact {
     height: 30% !important; }
-  #PersonDetail .skillName {
-    font-size: 11px; } }
+  #PersonDetail .personalInfoMid {
+    height: 39% !important; }
+  #PersonDetail .personalInfoMid .skills {
+    height: 13% !important; }
+  #PersonDetail .personalInfoMid .skills .skillName {
+    font-size: 16px; } }
 
 @media (min-width: 500px) and (max-width: 990px) {
   #PersonDetail #personalInfo .personalInfoContent {

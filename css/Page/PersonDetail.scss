@@ -129,8 +129,16 @@
 
 @media (max-width: 500px) {
   #PersonDetail {
+    #personalInfo {
+      padding: 0;
+      .personalInfoContent {
+        border: 1px none !important;
+        padding: 0 !important;
+      }
+    }
+
     .personalInfoTop {
-      
+      height: 30% !important;
 
       .personalInnerText {
         font-size: 14px !important;
@@ -139,9 +147,19 @@
         height: 30% !important;
       }
     }
-    .skillName {
-      font-size: 11px;
+
+    .personalInfoMid {
+      height: 39% !important;
+
+      .skills {
+        height: 13% !important;
+
+        .skillName {
+          font-size: 16px;
+        }
+      }
     }
+
   }
 
 }
