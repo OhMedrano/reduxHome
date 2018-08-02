@@ -91,4 +91,13 @@
 
 @media (max-width: 500px) {
   #ProjectsCon {
-    border: 5px solid white; } }
+    padding: 0; }
+  #ProjectsCon .projectConItem {
+    height: 40%;
+    padding: 0; }
+  #ProjectsCon .projectConItem #projectImgView {
+    height: 60%; }
+  #ProjectsCon .projectConItem #projectImgSelection {
+    height: 50%; }
+  #ProjectsCon #projectRight {
+    margin-top: 6%; } }

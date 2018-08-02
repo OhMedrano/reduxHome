@@ -98,7 +98,7 @@
 #PersonDetail #personalInfo #personalInfoBtm {
   padding-top: 4%; }
 
-#PersonDetail #personalInfo #personalInfoBtm .workExp > div, #PersonDetail #personalInfo #personalInfoBtm .workExp > ul {
+#PersonDetail #personalInfo #personalInfoBtm .workExp > .workName, #PersonDetail #personalInfo #personalInfoBtm .workExp > ul {
   padding: 0; }
 
 #PersonDetail #personalInfo #personalInfoBtm .workExp .workPos, #PersonDetail #personalInfo #personalInfoBtm .workExp .workDate {
@@ -108,6 +108,10 @@
   font-size: 12px;
   padding: 0; }
 
+.activeMobile {
+  background: #81818A;
+  color: #252529; }
+
 @media (max-width: 500px) {
   #PersonDetail #personalInfo {
     padding: 0; }
@@ -115,17 +119,39 @@
     border: 1px none !important;
     padding: 0 !important; }
   #PersonDetail .personalInfoTop {
-    height: 30% !important; }
+    height: 26% !important; }
   #PersonDetail .personalInfoTop .personalInnerText {
     font-size: 14px !important; }
   #PersonDetail .personalInfoTop .personalContact {
-    height: 30% !important; }
+    height: 38% !important; }
   #PersonDetail .personalInfoMid {
     height: 39% !important; }
   #PersonDetail .personalInfoMid .skills {
     height: 13% !important; }
   #PersonDetail .personalInfoMid .skills .skillName {
-    font-size: 16px; } }
+    font-size: 16px; }
+  #PersonDetail .personalInfoBtm {
+    padding: 0; }
+  #PersonDetail .personalInfoBtm .workExp {
+    padding: 0; }
+  #PersonDetail .personalInfoBtm .workMoName {
+    display: flex;
+    height: 9vh;
+    align-items: center; }
+  #PersonDetail .personalInfoBtm .workMoContain {
+    background: #81818A;
+    color: #252529; }
+  #PersonDetail .personalInfoBtm .workMoContain .workMobile {
+    padding-top: 10px; }
+  #PersonDetail .personalInfoBtm .workMoContain .workMobile > div {
+    padding: 0; }
+  #PersonDetail .personalInfoBtm .workMoContain .workMobile .workMoInName {
+    font-size: 30px; }
+  #PersonDetail .personalInfoBtm .workMoContain .workCon {
+    padding: 0 0 0 15px;
+    font-size: 17px; }
+  #PersonDetail .personalInfoBtm .workMoContain .workCon li {
+    padding: 0; } }
 
 @media (min-width: 500px) and (max-width: 990px) {
   #PersonDetail #personalInfo .personalInfoContent {

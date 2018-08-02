@@ -44,7 +44,7 @@ function Projects(data) {
 
   projectViewer.style.cssText = 'background:url('+projectData[selectedproject].projectImage+') no-repeat;';
   projectData.forEach(function(project,i) {
-    let projectContain = makeEle.createEle('div','projectContain'+i,[2,3,6,6],'projectSelect');
+    let projectContain = makeEle.createEle('div','projectContain'+i,[6,3,6,6],'projectSelect');
     let projectContainImg = makeEle.createEle('div','projectContainImg'+i,[12,12,12,12],'projectContainImg');
 
     projectContainImg.style.cssText = `background: url(${project.projectImage})no-repeat;`;
